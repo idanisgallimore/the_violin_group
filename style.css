@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+*{
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+/* Links and nav bar */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    margin-top: 50px;
+    margin-left: 30px;
+    z-index: 1;
+    position: absolute;
+
+}
+.header-branding{
+    color: white;
+    font-size: 34px;
+    font-family: 'Special Elite', cursive;
+}
+.links-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    width: 100%;
+}
+/* .header-box1{
+} */
+ .header-box2{
+    width: 40%;
+}
+.page-link{
+    display: inline-block;
+    width: 25%;
+
+}
+.actual-link{
+    color: white;
+    font-size: 18px;
+    font-weight: 580;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.section{
+    width: 100%;
+    display: flex;
+}
+.section1{
+    height: 600px;
+    background-image: url("images/banner_image.jpg");
+    background-size: cover;
+    background-position: top;
+    /* background-attachment: fixed; */
+    margin: 0;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+.title{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 60px;
+    /* display: inline-block; */
+    /* background-color: black; */
+    /* letter-spacing: 1px; */
+    width: 50%;
+    text-align: left;
+    margin-top: 60px;
+}
+/* section 2 landing page */
+.section2{
+    height: 500px;
+    background-color: #EBEDEF;
+    color: #5F6A6A;
+}
+.blockquote-container{
+    width: 60%;
+    margin: auto;
+    /* margin-bottom: 50px; */
+}
+.landing-text{
+    font-size: 22px;
+    text-align: center;
+    padding-left: 20px;
+    border-left: solid 1px #AEB6BF;
+    line-height: 30px;
+}
+.quote1{
+    margin-bottom: 30px;
+}
+/* Section 3 */
+.section3{
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.the_image{
+    height: 390px;
+    width: 33.3333333333%;
+}
+.the_image:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+/* Section 4 landing */
+.section4{
+    height: 300px;
+    background-color: #EBEDEF;
+    color: #5F6A6A;
+    justify-content: center;
+    align-items: center;
+}
+.sec4-content{
+    display: flex;
+    flex-direction: column;
+}
+.sub-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+.btn{
+    height: 60px;
+    width: 180px;
+    color: white;
+    border: 0;
+    font-size: 20px;
+}
+.btn-footer{
+    background-color: #a47841;
+    justify-self: center;
+    align-self: center;
+    margin-top: 50px;
+}
+.btn-footer:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* about page */
+.about-title{
+    font-family: 'Playfair Display', serif;
+    color: #a47841;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+.lan-sec1{
+    height: 300px;
+    background-image: url("images/img3.jpg");
+    background-size: cover;
+    background-position: bottom; 
+    background-attachment: fixed;
+    margin: 0;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+}
+.about-content{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: auto;
+}
+.about-text{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-left: solid 1px #AEB6BF;
+    font-size: 22px;
+    text-align: center;
+    padding-left: 20px;
+    line-height: 30px;
+}
+.lansec2{
+    background-color: #EBEDEF;
+    color: #5F6A6A;
+    /* height: 500px; */
+    flex-direction: column;
+}
+.vid-container{
+    width: 500px;
+    height: 400px;
+   margin: auto;
+
+}
+#myVideo {
+    width: 100%;
+    height: 100%;
+  }
+  /* contact page */
+  .con-sec1{
+    height: 300px;
+    background-image: url("images/img7.jpg");
+    background-size: cover;
+    background-position: bottom; 
+    background-attachment: fixed;
+    margin: 0;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+}
+.con-sec2{
+    flex-direction: row;
+    height: 450px;
+    align-items: center;
+    padding-bottom: 100px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin-left: 100px;
+}
+.con-inp{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 20px;
+}
+.con-inp::placeholder, textarea::placeholder{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+textarea{
+    border: 1px solid black;
+    outline: none;
+    font-size: 20px;
+    width: 50%;
+    height: 100px;
+    resize: none;
+}
+#map{
+    height: 300px;
+    width: 400px;
+    margin-top: 50px;
+}
+.location-title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.actual-location{
+    font-size: 20px;
+}
+.cont-title{
+    margin-bottom: 100px;
+}
+.fas{
+    color: white;
+}
